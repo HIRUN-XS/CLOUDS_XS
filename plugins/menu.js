@@ -8,7 +8,7 @@ cmd(
     filename: __filename,
   },
   async (
-    danuwa,
+    CLOUDS_XS,
     mek,
     m,
     {
