@@ -7,14 +7,14 @@ cmd({
     category: "main",
     filename: __filename
 },
-async (danuwa, mek, m, {
+async (CLOUDS_XS, mek, m, {
     from, quoted, body, isCmd, command, args, q, isGroup,
     sender, senderNumber, botNumber2, botNumber, pushname,
     isMe, isOwner, groupMetadata, groupName, participants,
     groupAdmins, isBotAdmins, isAdmins, reply
 }) => {
     try {
-        return await danuwa.sendMessage(from, {
+        return await CLOUDS_XS.sendMessage(from, {
             image: { url: config.ALIVE_IMG },
             caption: config.ALIVE_MSG
         }, { quoted: mek });
